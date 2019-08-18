@@ -12,6 +12,23 @@ Here are sample command lines for fetching :
 curl -XGET https://api.ipfinder.io/v1/domain/google.com?token=$TOKEN
 
 ```
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+// domain name
+$name = 'google.com';
+
+// lookup Organization information
+$details = $client->getDomain($name);
+
+var_dump($details);
+
+
+```
 
 
 
