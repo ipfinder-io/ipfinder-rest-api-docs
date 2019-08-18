@@ -39,9 +39,21 @@ var_dump($client);
 
 // print Organization name url encode  
 echo $client->urlencode;
-
 ```
 
+```python
+import ipfinder
+
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# Organization name
+org = 'Telecom Algeria'
+
+# lookup Organization information
+data = config.getRanges(org)
+
+data.details
+```
 
 
 > Make sure to convert $ORGNAME  into URL encoding 
