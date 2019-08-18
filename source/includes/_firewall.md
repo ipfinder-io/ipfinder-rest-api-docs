@@ -27,6 +27,17 @@ Here are sample command lines for fetching API service information :
  curl -X GET 'http://api.ipfinder.io/v1/firewall/as2?token=$TOKEN&format=apache_allow'
 ```
 
+```php
+<?php
+use ipfinder\ipfinder\IPfinder;
+// Token
+$client = new IPfinder('aac6070563e0d42ef5ca94fdc2b55fdd7546d7d6'); // YOUR_TOKEN_GOES_HERE
+$asn = 'as1'; // as36947
+
+// lookup Asn information or change to country code us , de, fr
+$details = $client->getFirewall($asn,'nginx_deny');
+var_dump($details);
+```
 
 
 >  replace `$Format` with available Format name.
