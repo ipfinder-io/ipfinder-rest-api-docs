@@ -44,6 +44,23 @@ curl -d '{"token":"$TOKEN", "format" : "php"}' /
 
 ```
 
+```php
+<?php 
+
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+// GET Get details for 1.0.0.0
+$ip_address = '1.0.0.0'; 
+
+// lookup IP address information
+
+$details = $client->getAddressInfo($ip_address);
+
+var_dump($details);
+```
 
 Here are a few examples for fetching IP address information from the command line :
 
