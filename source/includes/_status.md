@@ -39,6 +39,17 @@ var_dump($details);
 echo $details->queriesLeft."\n"; 
 ```
 
+```python
+import ipfinder
+
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# lookup TOKEN information
+data = config.getStatus()
+
+
+data.details
+```
 
 Parameter | Default | Description
 --------- | ------- | -----------
