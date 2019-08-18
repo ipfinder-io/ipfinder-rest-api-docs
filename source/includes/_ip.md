@@ -62,6 +62,18 @@ $details = $client->getAddressInfo($ip_address);
 var_dump($details);
 ```
 
+```python
+import ipfinder
+
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# GET Get details for 1.0.0.0
+
+ip = config.getAddressInfo('1.0.0.0')
+
+ip.details
+```
+
 Here are a few examples for fetching IP address information from the command line :
 
 
