@@ -14,7 +14,21 @@ curl -XGET https://api.ipfinder.io/v1/domainby/Google%20LLC?token=$TOKEN
 
 
 ```
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
 
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+// domain name
+$by = 'Google LLC';
+
+// lookup Organization information
+$details = $client->getDomainBy($name);
+
+var_dump($details);
+```
 
 
 ### HTTP Request
