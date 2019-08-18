@@ -34,6 +34,29 @@ curl -d '{"token":"$TOKEN", "format" : "php"}' /
      -X POST https://api.ipfinder.io/v1/(asNumber)
 ```
 
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+$asn = 'as36947';
+
+// lookup Asn information
+$details = $client->getAsn($asn);
+
+var_dump($details);
+
+
+// get and print continent name  
+echo $details->continent_name."\n"; 
+
+// get and print speed
+echo $details->speed['ping']."\n"; 
+
+```
+
 
 > Make sure to replace Add `(as|AS)` to `asNumber` example `as1` or `AS1`.
 
