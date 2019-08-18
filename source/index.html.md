@@ -9,6 +9,7 @@ toc_footers:
   - <a href='https://ipfinder.io/dashbord/contact'>Contact</a>
 
 includes:
+  - auth
   - errors
 
 search: true
