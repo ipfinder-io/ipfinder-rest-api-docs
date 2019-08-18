@@ -22,6 +22,25 @@ curl -X POST -d '{"token":"$TOKEN"}' -H "Content-Type: application/json" http://
 CURL -X GET 'http://api.sample.com/v1/ranges/Telecom%20Algeria?token=$TOKEN'
 
 ```
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+// Organization name
+$org = 'Telecom Algeria';
+
+// lookup Organization information
+$details = $client->getRanges($org);
+
+var_dump($client);
+
+// print Organization name url encode  
+echo $client->urlencode;
+
+```
 
 
 
