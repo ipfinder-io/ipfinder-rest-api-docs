@@ -31,6 +31,21 @@ $ curl -u $TOKEN: https://api.ipfinder.io/v1/
 $ curl -H 'X-Authorization: $TOKEN' https://api.ipfinder.io/v1/
 ```
 
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE');
+
+
+// lookup your IP address information
+
+$details = $client->Authentication();
+
+var_dump($details);
+
+```
 
 
 
