@@ -10,6 +10,23 @@ curl -XGET https://api.ipfinder.io/v1/domainhistory/google.com?token=$TOKEN
 ```
 
 
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
+
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+// domain name
+$name = 'google.com';
+
+// lookup Organization information
+$details = $client->getDomainHistory($name);
+
+var_dump($details);
+```
+
+
 
 ### HTTP Request
 
