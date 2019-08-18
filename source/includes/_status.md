@@ -21,7 +21,23 @@ $ curl -u $TOKEN:  https://api.ipfinder.io/v1/info
 # With X-Authorization token
 $ curl -H 'X-Authorization: $TOKEN' https://api.ipfinder.io/v1/info
 ```
+```php
+<?php 
+use ipfinder\ipfinder\IPfinder;
 
+// Token
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); 
+
+
+// lookup token information
+
+$details = $client->getStatus();
+
+var_dump($details);
+
+// get and print Number of IP address queries left for the day
+echo $details->queriesLeft."\n"; 
+```
 
 
 Parameter | Default | Description
