@@ -1,22 +1,37 @@
 # Errors
 
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
+Whenever a requested resource is not available or an API call fails for another reason, a JSON error is returned. Errors always come with an error code and a description.
 
-The Kittn API uses the following error codes:
+
+
+
+## Server
+Server error codes:
 
 
 Error Code | Meaning
 ---------- | -------
-400 | Bad Request -- Your request is invalid.
-401 | Unauthorized -- Your API key is wrong.
-403 | Forbidden -- The kitten requested is hidden for administrators only.
-404 | Not Found -- The specified kitten could not be found.
-405 | Method Not Allowed -- You tried to access a kitten with an invalid method.
-406 | Not Acceptable -- You requested a format that isn't json.
-410 | Gone -- The kitten requested has been removed from our servers.
-418 | I'm a teapot.
-429 | Too Many Requests -- You're requesting too many kittens! Slow down!
-500 | Internal Server Error -- We had a problem with our server. Try again later.
-503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+`400` | Bad Request -- Your request is invalid.
+`401` | Unauthorized -- Your API key is wrong.
+`403` | Forbidden -- The  requested is hidden for administrators only.
+`404` | Not Found -- The specified  could not be found.
+`405` | Method Not Allowed -- invalid method.
+`406` | Not Acceptable -- You requested a format Not Acceptable .
+`429` | Too Many Requests -- You're requesting too many ! Slow down!
+`500` | Internal Server Error -- We had a problem with our server. Try again later.
+`503` | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+
+## API
+API error codes:
+
+
+Error Code | Error id                   | Meaning
+---------- | -------                    | -------
+`104`      | usage_limit_reached        | You have reached your usage limit. Upgrade your plan if necessary.
+`404`      | invalid_access_key         | No API Key was specified or an invalid API Key was specified.
+`404`      | missing_token_key          | No API Key was specified.
+`402`      | expired_paymant            | expired paymant please Upgrade your plan
+`402`      | non_paymant                | non paymant Please Login to your dashbord and make order
+`105`      | function_access_restricted | asn api note include in `basic` or `Free` acoount please Upgrade your plan
+`405`      | method_not_allowed         | Method Not Allowed
+`404`      | 404_not_found              | The requested resource does not exist.
