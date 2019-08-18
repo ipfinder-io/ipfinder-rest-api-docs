@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title:  Geolocation API developer Documentation v1 - IPFINDER
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell: cURL
