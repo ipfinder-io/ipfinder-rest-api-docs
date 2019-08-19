@@ -31,12 +31,26 @@ Here are sample command lines for fetching API service information :
 <?php
 use ipfinder\ipfinder\IPfinder;
 // Token
-$client = new IPfinder('aac6070563e0d42ef5ca94fdc2b55fdd7546d7d6'); // YOUR_TOKEN_GOES_HERE
+$client = new IPfinder('YOUR_TOKEN_GOES_HERE'); // YOUR_TOKEN_GOES_HERE
 $asn = 'as1'; // as36947
 
 // lookup Asn information or change to country code us , de, fr
 $details = $client->getFirewall($asn,'nginx_deny');
 var_dump($details);
+```
+
+```python
+import ipfinder
+
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+asn = 'as36947'
+
+# lookup Firewall information
+
+data = config.getFirewall(asn, 'nginx_deny')
+
+data.details
 ```
 
 
