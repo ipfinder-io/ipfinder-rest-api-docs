@@ -56,7 +56,16 @@ echo $details->continent_name."\n";
 echo $details->speed['ping']."\n"; 
 
 ```
+```python
+import ipfinder
 
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# lookup Asn information
+asn = config.getAsn('AS1')
+
+asn.details
+```
 
 > Make sure to replace Add `(as|AS)` to `asNumber` example `as1` or `AS1`.
 
