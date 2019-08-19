@@ -5,6 +5,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell: cURL
   - php: PHP
   - php: Python
+  - javascript: Node.js
 
 toc_footers:
   - <a href='https://ipfinder.io/auth/signup'>Sign Up for a Developer Key</a>
