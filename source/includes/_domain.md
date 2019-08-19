@@ -26,11 +26,21 @@ $name = 'google.com';
 $details = $client->getDomain($name);
 
 var_dump($details);
-
-
 ```
 
+```python
+import ipfinder
 
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+
+#  domain name
+name = 'google.com';
+
+data = config.getDomain(name)
+
+data.details
+```
 
 ### HTTP Request
 
