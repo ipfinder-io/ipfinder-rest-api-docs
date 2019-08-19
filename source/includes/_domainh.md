@@ -29,7 +29,18 @@ $details = $client->getDomainBy($name);
 
 var_dump($details);
 ```
+```python
+import ipfinder
 
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# list live domain by country DZ,US,TN,FR,MA
+by = 'DZ';
+
+dby = config.getDomainBy(by)
+
+dby.details
+```
 
 ### HTTP Request
 
