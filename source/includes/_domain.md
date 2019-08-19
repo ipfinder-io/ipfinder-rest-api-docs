@@ -33,13 +33,22 @@ import ipfinder
 
 config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
 
-
 #  domain name
 name = 'google.com';
 
 data = config.getDomain(name)
 
 data.details
+```
+
+```javascript
+const Ipfinder = require('ipfinder');
+const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
+
+ipfinder.getDomain("google.com").then(data => {
+     console.log(data);
+    // console.log(data.status_message);
+}).catch(console.log);
 ```
 
 ### HTTP Request
