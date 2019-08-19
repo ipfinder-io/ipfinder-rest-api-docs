@@ -74,6 +74,16 @@ ip = config.getAddressInfo('1.0.0.0')
 ip.details
 ```
 
+```javascript
+const Ipfinder = require("ipfinder");
+const ipfinder = new Ipfinder();
+
+ipfinder.getAddressInfo("1.0.0.0").then(data => {
+     console.log(data);
+    // console.log(data.status_message);
+}).catch(console.log);
+```
+
 Here are a few examples for fetching IP address information from the command line :
 
 
