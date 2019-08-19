@@ -42,6 +42,16 @@ dby = config.getDomainBy(by)
 dby.details
 ```
 
+```javascript
+const Ipfinder = require('ipfinder');
+const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
+
+ipfinder.getDomainBy("DZ").then(data => {
+     console.log(data);
+    // console.log(data.status_message);
+}).catch(console.log);
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domainby/{$select_by}?token=$TOKEN&format=$format`
