@@ -25,7 +25,18 @@ $details = $client->getDomainHistory($name);
 
 var_dump($details);
 ```
+```python
+import ipfinder
 
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# domain name
+name = 'google.com';
+
+data = config.getDomainHistory(name)
+
+data.details
+```
 
 
 ### HTTP Request
