@@ -58,6 +58,16 @@ auth = config.Authentication()
 auth.details
 ```
 
+```javascript
+const Ipfinder = require('ipfinder');
+const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
+
+ipfinder.Authentication().then(data => {
+     console.log(data);
+    // console.log(data.status_message);
+}).catch(console.log);
+```
+
 > Make sure to replace `$TOKEN` with your API key.
 
 Your API token is used to authenicate you with our API, and can be provided either as a  `POST` , `Basic Auth` OR `X-Authorizatio`, or alternatively as a token URL parameter.
