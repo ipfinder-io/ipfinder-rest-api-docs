@@ -47,7 +47,16 @@ var_dump($details);
 
 ```
 
+```python
+import ipfinder
 
+config = ipfinder.config('YOUR_TOKEN_GOES_HERE')
+
+# lookup your IP address information
+auth = config.Authentication()
+
+auth.details
+```
 
 > Make sure to replace `$TOKEN` with your API key.
 
