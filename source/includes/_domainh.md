@@ -52,6 +52,18 @@ ipfinder.getDomainBy("DZ").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# lookup  live list domain by country DZ,US,TN,FR,MA
+by = 'DZ'
+
+dby = config.getDomainBy(by)
+
+puts dby.inspect
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domainby/{$select_by}?token=$TOKEN&format=$format`
