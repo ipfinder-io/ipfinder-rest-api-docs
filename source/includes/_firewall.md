@@ -63,6 +63,19 @@ ipfinder.getFirewall("AS1", 'nginx_deny').then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+asn = 'as36947'
+format = 'nginx_deny'
+# lookup Asn Firewall information
+
+firewall = config.getFirewall(asn, format)
+
+puts firewall.inspect
+```
+
 
 >  replace `$Format` with available Format name.
 
