@@ -84,6 +84,19 @@ ipfinder.getAddressInfo("1.0.0.0").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# GET Get details for 1.0.0.0
+ip_address = '1.0.0.0'
+
+# lookup IP address information
+ip = config.getAddressInfo('1.0.0.0')
+
+puts ip.inspect
+```
+
 Here are a few examples for fetching IP address information from the command line :
 
 
