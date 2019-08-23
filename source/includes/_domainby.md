@@ -47,6 +47,18 @@ ipfinder.getDomainHistory("google.com").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# lookup domain name IP history
+name = 'google.com'
+
+data = config.getDomainHistory(name)
+
+puts data.inspect
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domainhistory/$DomainName?token=$TOKEN&format=$Format`
