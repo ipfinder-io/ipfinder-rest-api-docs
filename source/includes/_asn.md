@@ -77,6 +77,18 @@ ipfinder.getAsn("as1").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+asn = 'as36947'
+
+# lookup Asn information
+asn = config.getAsn(asn)
+
+puts asn.inspect
+```
+
 > Make sure to replace Add `(as|AS)` to `asNumber` example `as1` or `AS1`.
 
 
