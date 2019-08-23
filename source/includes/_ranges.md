@@ -65,6 +65,19 @@ ipfinder.getRanges("Telecom Algeria").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# Organization name
+org = 'Telecom Algeria'
+
+# lookup Organization information
+range = config.getRanges(org)
+
+puts range.inspect
+```
+
 
 > Make sure to convert $ORGNAME  into URL encoding 
 
