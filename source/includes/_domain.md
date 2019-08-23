@@ -51,6 +51,18 @@ ipfinder.getDomain("google.com").then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# lookup domain name data
+name = 'google.com'
+
+domain = config.getDomain(name)
+
+puts domain.inspect
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domain/$DomainName?token=$TOKEN&format=$Format`
