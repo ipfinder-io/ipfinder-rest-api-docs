@@ -60,6 +60,15 @@ ipfinder.getStatus().then(data => {
 }).catch(console.log);
 ```
 
+```ruby
+require 'ipfinder'
+config = Ipfinder::config('YOUR_TOKEN_GOES_HERE')
+
+# lookup IP TOKEN information
+data = config.getStatus()
+
+puts data.inspect
+```
 
 Parameter | Default | Description
 --------- | ------- | -----------
