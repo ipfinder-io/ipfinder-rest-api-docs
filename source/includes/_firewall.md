@@ -76,6 +76,14 @@ firewall = config.getFirewall(asn, format)
 puts firewall.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -f AS1 --m juniper_junos
+  # longopt
+$ ipfinder --firewall AS1 --format juniper_junos
+
+```
 
 >  replace `$Format` with available Format name.
 
