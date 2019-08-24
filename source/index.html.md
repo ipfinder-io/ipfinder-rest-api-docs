@@ -7,6 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - php: Python
   - javascript: Node.js
   - ruby: Ruby
+  - powershell: CLI
 
 toc_footers:
   - <a href='https://ipfinder.io/auth/signup'>Sign Up for a Developer Key</a>
