@@ -14,7 +14,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Ruby       | Released |[ipfinder-io/ip-finder-ruby](https://github.com/ipfinder-io/ip-finder-ruby)|[Ipfinder](https://rubygems.org/gems/Ipfinder)|  
 | Go         | In progress  | ||
 | R          | In progress  | ||
-| Perl       | In progress  | ||
+| Perl       | Released  |[ipfinder-io/ip-finder-perl](https://github.com/ipfinder-io/ip-finder-perl) ||
 
 
 ## Framework Libraries
