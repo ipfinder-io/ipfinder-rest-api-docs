@@ -78,6 +78,15 @@ range = config.getRanges(org)
 puts range.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -r  'Telecom Algeria'
+  # longopt
+$ ipfinder --ranges  'Telecom Algeria'
+
+```
+
 
 > Make sure to convert $ORGNAME  into URL encoding 
 
