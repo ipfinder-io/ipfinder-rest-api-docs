@@ -59,6 +59,15 @@ data = config.getDomainHistory(name)
 puts data.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -dh google.com
+  # longopt
+$ ipfinder --dhistory google.com
+
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domainhistory/$DomainName?token=$TOKEN&format=$Format`
