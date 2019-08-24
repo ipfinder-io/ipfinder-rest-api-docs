@@ -89,6 +89,15 @@ asn = config.getAsn(asn)
 puts asn.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -n as1
+  # longopt
+$ ipfinder --asn as99 
+
+```
+
 > Make sure to replace Add `(as|AS)` to `asNumber` example `as1` or `AS1`.
 
 
