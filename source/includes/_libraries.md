@@ -35,6 +35,7 @@ The framework libraries should make it *as simple as possible* to use our API. F
 | Spring  (Java)                 | In progress |                                                   | 
 | Laravel (PHP)                  | In progress |                                                   | 
 | CodeIgniter (PHP)              | Released    |[ipfinder-io/codeigniter-ipfinder](https://github.com/ipfinder-io/codeigniter-ipfinder)|
+| cakephp (PHP)                  | Released    |[ipfinder-io/cakephp-ipfinder](https://github.com/ipfinder-io/cakephp-ipfinder)|
 | Django (Python)                | In progress |                                                   | 
 | Rails (Ruby)                   | In progress |                                                   | 
 
