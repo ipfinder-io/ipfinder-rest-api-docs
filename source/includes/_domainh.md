@@ -64,6 +64,15 @@ dby = config.getDomainBy(by)
 puts dby.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -dl DZ
+  # longopt
+$ ipfinder --dlist "Google LLC"
+
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domainby/{$select_by}?token=$TOKEN&format=$format`
