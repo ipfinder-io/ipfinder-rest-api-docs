@@ -70,6 +70,15 @@ data = config.getStatus()
 puts data.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -s 
+  # longopt
+$ ipfinder --status 
+
+```
+
 Parameter | Default | Description
 --------- | ------- | -----------
 `token`     | Required | Your API key or the string "free" for the free API
