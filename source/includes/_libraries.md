@@ -15,6 +15,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Go         | In progress  | ||
 | R          | In progress  | ||
 | Perl       | Released  |[ipfinder-io/ip-finder-perl](https://github.com/ipfinder-io/ip-finder-perl) ||
+| D          | Released  |[ipfinder-io/ip-finder-dlag](https://github.com/ipfinder-io/ip-finder-dlag) ||
 
 
 ## Framework Libraries
