@@ -78,6 +78,15 @@ puts auth.inspect
 puts auth.ip # your ip
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -a 
+  # longopt
+$ ipfinder --auth 
+
+```
+
 > Make sure to replace `$TOKEN` with your API key.
 
 Your API token is used to authenicate you with our API, and can be provided either as a  `POST` , `Basic Auth` OR `X-Authorizatio`, or alternatively as a token URL parameter.
