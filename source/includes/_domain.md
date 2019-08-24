@@ -63,6 +63,15 @@ domain = config.getDomain(name)
 puts domain.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -d google.dz
+  # longopt
+$ ipfinder --domain facebook.com
+
+```
+
 ### HTTP Request
 
 `GET https://api.ipfinder.io/v1/domain/$DomainName?token=$TOKEN&format=$Format`
