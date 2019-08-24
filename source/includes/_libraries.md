@@ -31,9 +31,10 @@ The framework libraries should make it *as simple as possible* to use our API. F
 | Framework                      | Status      | Link                                              
 | ------------------------------ | ----------- | ------------------------------------------------- 
 | Express  (NodeJS - Javascript) | In progress |                                                   |
+| Meteor (NodeJS - Javascript)   | Released    |[ipfinder-io/ip-finder-meteor](https://github.com/ipfinder-io/ip-finder-meteor)| 
 | Spring  (Java)                 | In progress |                                                   | 
 | Laravel (PHP)                  | In progress |                                                   | 
-| CodeIgniter (PHP)              | Released    |[ipfinder-io/codeigniter-ipfinder](https://github.com/ipfinder-io/codeigniter-ipfinder)|   
+| CodeIgniter (PHP)              | Released    |[ipfinder-io/codeigniter-ipfinder](https://github.com/ipfinder-io/codeigniter-ipfinder)|
 | Django (Python)                | In progress |                                                   | 
 | Rails (Ruby)                   | In progress |                                                   | 
 
