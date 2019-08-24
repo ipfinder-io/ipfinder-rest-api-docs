@@ -97,6 +97,15 @@ ip = config.getAddressInfo('1.0.0.0')
 puts ip.inspect
 ```
 
+```powershell
+
+  # shortopt
+$ ipfinder -i 5.5.5.5
+  # longopt
+$ ipfinder --ip 2.2.2.2
+
+```
+
 Here are a few examples for fetching IP address information from the command line :
 
 
