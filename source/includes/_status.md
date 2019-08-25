@@ -97,6 +97,21 @@ status = conf:getStatus()
 print(inspect(status))
 ```
 
+```d
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE");
+
+        try {
+
+            JSONValue response = ipfinder.getStatus();
+
+            // print data
+            writeln(response);
+        } catch (Exception ex) {
+            // Handle error
+            writeln(e);
+        }
+```
+
 ```powershell
 
   # shortopt
