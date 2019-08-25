@@ -70,6 +70,21 @@ data = config.getStatus()
 puts data.inspect
 ```
 
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "");
+
+        try {
+            
+            StatusResponse response = ipfinder.getStatus();
+
+            // print data
+            System.out.println(response);
+        } catch (IPfinderException ex) {
+            // Handle error
+            System.out.println(e);
+        }
+```
+
 ```powershell
 
   # shortopt
