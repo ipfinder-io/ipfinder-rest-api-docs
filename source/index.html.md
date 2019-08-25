@@ -8,6 +8,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript: Node.js
   - ruby: Ruby
   - java: JAVA
+  - lua: Lua
   - powershell: CLI
 
 toc_footers:
