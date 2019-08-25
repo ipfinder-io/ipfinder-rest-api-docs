@@ -96,6 +96,18 @@ puts range.inspect
         }
 ```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+
+-- lookup Organization information
+range = conf:getRanges("Telecom Algeria")
+
+print(inspect(range))
+```
+
 ```powershell
 
   # shortopt
