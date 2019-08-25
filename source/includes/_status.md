@@ -85,6 +85,18 @@ puts data.inspect
         }
 ```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+
+-- lookup IP TOKEN information
+status = conf:getStatus()
+
+print(inspect(status))
+```
+
 ```powershell
 
   # shortopt
