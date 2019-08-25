@@ -116,6 +116,20 @@ puts ip.inspect
         }
 ```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+
+-- GET Get details for 1.0.0.0
+ip = conf:getAddressInfo("1.0.0.0")
+
+print(inspect(ip))
+
+print(ip.ip)
+```
+
 ```powershell
 
   # shortopt
