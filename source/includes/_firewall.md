@@ -96,6 +96,18 @@ puts firewall.inspect
         }
 ```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+
+-- lookup Asn Firewall information
+fire = conf:getFirewall("AS1", 'nginx_deny')
+
+print(inspect(fire))
+```
+
 ```powershell
 
   # shortopt
