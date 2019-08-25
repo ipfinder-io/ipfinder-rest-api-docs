@@ -89,6 +89,26 @@ asn = config.getAsn(asn)
 puts asn.inspect
 ```
 
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", ""); 
+
+        try {
+            // lookup Asn information
+            String asn = "as36947";
+
+            AsnResponse response = ipfinder.getAsn(asn);
+
+            // print data
+            System.out.println(response);
+
+            // print continent name
+            System.out.println(response.getContinentName());
+        } catch (IPfinderException e) {
+            // Handle error
+        }
+```
+
+
 ```powershell
 
   # shortopt
