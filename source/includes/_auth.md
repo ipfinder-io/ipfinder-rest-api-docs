@@ -93,6 +93,17 @@ puts auth.ip # your ip
             // Handle error
         }
 ```
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+accconf Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+
+-- lookup your IP address information
+auth = conf:Authentication()
+
+print(inspect(auth))
+```
 
 ```powershell
 
