@@ -119,6 +119,23 @@ asn = conf:getAsn("AS1")
 print(inspect(asn))
 ```
 
+```d
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE");
+
+        try {
+            // lookup Asn information
+            string asn = "as36947";
+
+            JSONValue response = ipfinder.getAsn(asn);
+
+            // print data
+            writeln(response);
+
+        } catch (Exception e) {
+            // Handle error
+        }
+```
+
 ```powershell
 
   # shortopt
