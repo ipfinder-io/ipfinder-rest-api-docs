@@ -63,6 +63,25 @@ domain = config.getDomain(name)
 puts domain.inspect
 ```
 
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "");
+
+        try {
+
+            String name = "google.com";
+            
+            DomainResponse response = ipfinder.getDomain(name);
+
+            // print data
+            System.out.println(response);
+
+        } catch (IPfinderException ex) {
+            // Handle error
+            System.out.println(e);
+        }
+```
+
+
 ```powershell
 
   # shortopt
