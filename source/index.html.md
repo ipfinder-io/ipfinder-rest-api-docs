@@ -4,7 +4,7 @@ title:  Geolocation API developer Documentation v1 - IPFINDER
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell: cURL
   - php: PHP
-  - php: Python
+  - python: Python
   - javascript: Node.js
   - ruby: Ruby
   - java: JAVA
