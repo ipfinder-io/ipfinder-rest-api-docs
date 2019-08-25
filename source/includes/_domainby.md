@@ -75,7 +75,17 @@ puts data.inspect
             System.out.println(e);
         }
     }
+```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+-- domain name IP history
+domain = conf:getDomainHistory("google.fr")
+
+print(inspect(domain))
 ```
 
 ```powershell
