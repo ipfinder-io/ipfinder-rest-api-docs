@@ -96,6 +96,25 @@ ip = config.getAddressInfo('1.0.0.0')
 
 puts ip.inspect
 ```
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", ""); 
+
+        try {
+
+            // lookup your IP address information
+            String ip = "5.2.0.2";
+            
+            IPResponse response = ipfinder.getAddressInfo(ip);
+
+            System.out.println(response.toString());
+
+            // print city name
+            System.out.println(response.getCity());
+
+        } catch (IPfinderException e) {
+            // Handle error
+        }
+```
 
 ```powershell
 
