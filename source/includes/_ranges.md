@@ -15,11 +15,11 @@ Here are sample command lines for fetching API service information :
 ### The parameters are defined as follows :
 ```shell
 # With POST
-curl -X POST -d '{"token":"$TOKEN"}' -H "Content-Type: application/json" http://api.sample.com/v1/ranges/$ORGNAME
+curl -X POST -d '{"token":"$TOKEN"}' -H "Content-Type: application/json" http://api.ipfinder.io/v1/ranges/$ORGNAME
 
 # With token query parameter
 
-CURL -X GET 'http://api.sample.com/v1/ranges/Telecom%20Algeria?token=$TOKEN'
+CURL -X GET 'http://api.ipfinder.io/v1/ranges/Telecom%20Algeria?token=$TOKEN'
 
 ```
 ```php
