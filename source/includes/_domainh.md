@@ -82,6 +82,18 @@ puts dby.inspect
         }
 ```
 
+```lua
+local inspect = require('inspect')
+local ipfinder = require('ipfinder')
+
+conf = Ipfinder:init("YOUR_TOKEN_GOES_HERE")
+-- list live domain by country DZ,US,TN,FR,MA
+
+domain = conf:getDomainBy("FR")
+
+print(inspect(domain))
+```
+
 ```powershell
 
   # shortopt
