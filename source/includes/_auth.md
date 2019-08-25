@@ -77,6 +77,22 @@ puts auth.inspect
 
 puts auth.ip # your ip
 ```
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", ""); 
+
+        try {
+            // lookup your IP address information
+            IPResponse response = ipfinder.authentication();
+            
+            System.out.println(response.toString());
+
+            // print city name
+            System.out.println(response.getCity());
+
+        } catch (IPfinderException e) {
+            // Handle error
+        }
+```
 
 ```powershell
 
