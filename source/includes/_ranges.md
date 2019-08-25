@@ -78,6 +78,24 @@ range = config.getRanges(org)
 puts range.inspect
 ```
 
+```java
+        Ipfinder ipfinder = new Ipfinder("YOUR_TOKEN_GOES_HERE", "");
+
+        try {
+
+            String org = "Telecom Algeria";
+            
+            RangeResponse response = ipfinder.getRanges(org);
+
+            // print data
+            System.out.println(response);
+
+        } catch (IPfinderException ex) {
+            // Handle error
+            System.out.println(e);
+        }
+```
+
 ```powershell
 
   # shortopt
