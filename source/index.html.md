@@ -10,6 +10,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - java: JAVA
   - lua: Lua
   - d: dlang
+  - r: Rlang
   - powershell: CLI
 
 toc_footers:
