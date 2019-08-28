@@ -122,6 +122,19 @@ print(inspect(auth))
         }
 ```
 
+```r
+require(ipfinder)
+
+accconf Ipfinder(token="YOUR_TOKEN_GOES_HERE")
+
+# lookup your IP address information
+auth <- Authentication(conf)
+
+auth
+# print your ip
+auth$ip
+```
+
 ```powershell
 
   # shortopt
