@@ -2,6 +2,12 @@
 All notable changes to this API will be documented in this file.
 
 ##  August, 2019
+- released R librarie [released](https://github.com/ipfinder-io/ip-finder-rlang)
+- released Lua librarie [released](https://github.com/ipfinder-io/ip-finder-lua)
+- released Java librarie [released](https://github.com/ipfinder-io/ip-finder-java)
+- released CakePHP (PHP) [released](https://github.com/ipfinder-io/cakephp-ipfinder)
+- released D librarie [released](https://github.com/ipfinder-io/ip-finder-dlang)
+- released Meteor librarie [released](https://github.com/ipfinder-io/ip-finder-Meteor)
 - Add Examples Ruby
 - released Ruby librarie [released](https://github.com/ipfinder-io/ip-finder-ruby)
 - Add Examples IPFinder CLI
