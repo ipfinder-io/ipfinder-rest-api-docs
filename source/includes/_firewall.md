@@ -139,6 +139,15 @@ fire <- getFirewall(conf,"AS1", 'nginx_deny')
 fire
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# lookup Asn Firewall information
+iex> {:ok, fire} = getFirewall(conf,"AS1", 'nginx_deny')
+
+iex>fire
+```
+
 ```powershell
 
   # shortopt
