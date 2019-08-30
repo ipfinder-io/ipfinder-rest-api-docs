@@ -11,6 +11,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - lua: Lua
   - d: dlang
   - r: Rlang
+  - elixir: elixir
   - powershell: CLI
 
 toc_footers:
