@@ -225,8 +225,8 @@ Depending on your subscription plan and the options you choose for your API requ
     "longitude": "-92.5063",
     "location": {
         "capital": "Washington, D.C.",
-        "country_flag": "http:\/\/fipfinder.io\/flag\/usa.svg",
-        "flag_png": "http:\/\/fipfinder.io\/flag\/usa.png",
+        "country_flag": "http:\/\/ipfinder.io\/flag\/usa.svg",
+        "flag_png": "http:\/\/ipfinder.io\/flag\/usa.png",
         "country_flag_emoji": "\ud83c\uddfa\ud83c\uddf8",
         "country_flag_emoji_unicode": "U+1F1FA U+1F1F8",
         "calling_code": "1",
