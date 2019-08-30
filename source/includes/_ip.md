@@ -161,6 +161,15 @@ ip <- getAddressInfo(conf,"1.0.0.0")
 ip
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# GET Get details for 1.0.0.0
+iex> {:ok, ip} = getAddressInfo(conf,"1.0.0.0")
+# print data
+ip
+```
+
 ```powershell
 
   # shortopt
