@@ -1,8 +1,10 @@
-# Filtering Responses
+## Filtering Responses
+
 You can filter the API response down to specific fields or objects by adding the field or object name to the URL. In the case of a field you'll get it returned in plaintext, and an object will get returned as JSON.
-```
+
+```bash
 # Get json the type field as plaintext
-curl -X GET https://api.ipfinder.io/v1/1.0.0.0?token=free
+$ curl -X GET https://api.ipfinder.io/v1/1.0.0.0?token=free
 {
     "status": "ok",
     "status_message": "Query was successful",
@@ -15,5 +17,11 @@ curl -X GET https://api.ipfinder.io/v1/1.0.0.0?token=free
     "country_native_name": "Australia",
     "region_name": "Queensland",
     "city": "South Brisbane"
-
+}
+$ curl -XGET 'https://api.ipfinder.io/v1/1.0.0.0?token=free&propertyName=continent_code'
+"OC"
+$ curl -XGET 'https://api.ipfinder.io/v1/1.0.0.0?token=free&propertyName=type'
+"IPV4"
+$ curl -XGET 'https://api.ipfinder.io/v1/1.0.0.0?token=free&propertyName=city'
+"South Brisbane"
 ```

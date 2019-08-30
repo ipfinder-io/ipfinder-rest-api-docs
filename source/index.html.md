@@ -20,6 +20,10 @@ toc_footers:
 
 includes:
   - auth
+  - https
+  - rate
+  - filtering
+  - cors
   - ip
   - asn
   - firewall
