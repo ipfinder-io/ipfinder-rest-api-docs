@@ -137,6 +137,15 @@ range <- getRanges(conf,"Telecom Algeria")
 range
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# lookup Organization information
+iex> {:ok, range} = getRanges(conf,"Telecom Algeria")
+
+iex> range
+```
+
 ```powershell
 
   # shortopt
