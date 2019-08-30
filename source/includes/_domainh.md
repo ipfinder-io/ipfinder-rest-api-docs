@@ -122,6 +122,16 @@ by <- getDomainBy(conf,"FR")
 by
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# list live domain by country DZ,US,TN,FR,MA
+
+iex> {:ok, by} = getDomainBy(conf,"FR")
+
+iex> by
+```
+
 ```powershell
 
   # shortopt
