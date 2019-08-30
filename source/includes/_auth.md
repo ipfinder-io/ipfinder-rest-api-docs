@@ -135,6 +135,17 @@ auth
 auth$ip
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# lookup your IP address information
+iex> {:ok, auth} = Authentication(conf)
+
+iex> auth
+# print your ip
+iex> auth.ip
+```
+
 ```powershell
 
   # shortopt
