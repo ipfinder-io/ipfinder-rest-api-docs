@@ -146,6 +146,15 @@ asn <- getAsn(conf,"AS1")
 asn
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+iex> {:ok, asn} = getAsn(conf,"AS1")
+# print data
+iex> asn
+```
+
+
 ```powershell
 
   # shortopt
