@@ -17,7 +17,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Perl       | Released  |[ipfinder-io/ip-finder-perl](https://github.com/ipfinder-io/ip-finder-perl) ||
 | D          | Released  |[ipfinder-io/ip-finder-dlag](https://github.com/ipfinder-io/ip-finder-dlag) |[ipfinder](https://code.dlang.org/packages/ipfinder)|  
 | Lua        | Released  |[ipfinder-io/ip-finder-lua](https://github.com/ipfinder-io/ip-finder-lua) |[ipfinder](https://luarocks.org/modules/benemohamed/ipfinder)|  
-| R          | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-rlang) ||
+| elixir     | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-elixir) ||
 
 ## Framework Libraries
 
