@@ -7,7 +7,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Language   | Status       | Link         | Package Manager|
 | ---------- | ------------ | ------------ | ------------   |
 | Javascript | Released |[ipfinder-io/ip-finder-node](https://github.com/ipfinder-io/ip-finder-node)|[ipfinder](https://www.npmjs.com/package/ipfinder)|       
-| Java       | Released  |[ipfinder-io/ip-finder-java](https://github.com/ipfinder-io/ip-finder-java) ||
+| Java       | Released  |[ipfinder-io/ip-finder-java](https://github.com/ipfinder-io/ip-finder-java) |[ipfinder-io](https://search.maven.org/search?q=a:ipfinder-io)|
 | Python     | Released |[ipfinder-io/ip-finder-python](https://github.com/ipfinder-io/ip-finder-python)|[ipfinder-io](https://pypi.org/project/ipfinder-io/)|                 
 | PHP        | Released |[ipfinder-io/ip-finder-php](https://github.com/ipfinder-io/ip-finder-php)|[ipfinder/ipfinder](https://packagist.org/packages/ipfinder/ipfinder)|                            
 | Ruby       | Released |[ipfinder-io/ip-finder-ruby](https://github.com/ipfinder-io/ip-finder-ruby)|[Ipfinder](https://rubygems.org/gems/Ipfinder)|  
