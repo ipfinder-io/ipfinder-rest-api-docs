@@ -9,15 +9,15 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Javascript | Released |[ipfinder-io/ip-finder-node](https://github.com/ipfinder-io/ip-finder-node)|[ipfinder](https://www.npmjs.com/package/ipfinder)|       
 | Java       | Released  |[ipfinder-io/ip-finder-java](https://github.com/ipfinder-io/ip-finder-java) ||
 | Python     | Released |[ipfinder-io/ip-finder-python](https://github.com/ipfinder-io/ip-finder-python)|[ipfinder-io](https://pypi.org/project/ipfinder-io/)|                 
-| C#         | In progress  | ||
 | PHP        | Released |[ipfinder-io/ip-finder-php](https://github.com/ipfinder-io/ip-finder-php)|[ipfinder/ipfinder](https://packagist.org/packages/ipfinder/ipfinder)|                            
 | Ruby       | Released |[ipfinder-io/ip-finder-ruby](https://github.com/ipfinder-io/ip-finder-ruby)|[Ipfinder](https://rubygems.org/gems/Ipfinder)|  
-| Go         | In progress  | ||
 | R          | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-rlang) ||
 | Perl       | Released  |[ipfinder-io/ip-finder-perl](https://github.com/ipfinder-io/ip-finder-perl) ||
 | D          | Released  |[ipfinder-io/ip-finder-dlag](https://github.com/ipfinder-io/ip-finder-dlag) |[ipfinder](https://code.dlang.org/packages/ipfinder)|  
 | Lua        | Released  |[ipfinder-io/ip-finder-lua](https://github.com/ipfinder-io/ip-finder-lua) |[ipfinder](https://luarocks.org/modules/benemohamed/ipfinder)|  
-| elixir     | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-elixir) ||
+| elixir     | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-elixir) |[ipfinder](https://hex.pm/packages/ipfinder)|
+| Go         | In progress  | ||
+| C#         | In progress  | ||
 
 ## Framework Libraries
 
@@ -40,4 +40,7 @@ The framework libraries should make it *as simple as possible* to use our API. F
 | Rails (Ruby)                   | In progress |                                                   | 
 
 ## Third party libraries
-There are a large number of unofficial ipfinder libraries written by third parties. While these aren't maintained by us and haven't been tested by us these libraries can be a great way to get started quickly with ipfinder if you're using a language or framework that we don't have an official library for. Search GitHub for ipfinder libraries.
+There are a large number of unofficial ipfinder libraries written by third parties. While these aren't maintained by us and haven't been tested by us these libraries can be a great way to get started quickly with ipfinder if you're using a language or framework that we don't have an official library for. Search GitHub for [ipfinder](https://github.com/search?q=ipfinder) libraries.
+
+
+If you’ve written a ipfinder library and would like to add it to this page, send an email to info@ipfinder.io.
