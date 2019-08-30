@@ -123,6 +123,15 @@ status <- getStatus(conf)
 status
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+# lookup IP TOKEN information
+iex> {:ok, status} = getStatus(conf)
+
+iex> status
+```
+
 
 ```powershell
 
