@@ -120,6 +120,15 @@ domain <- getDomain(conf,"google.fr")
 domain
 ```
 
+```elixir
+iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
+
+iex> {:ok, domain} = getDomain(conf,"google.fr")
+
+iex> domain
+```
+
+
 ```powershell
 
   # shortopt
