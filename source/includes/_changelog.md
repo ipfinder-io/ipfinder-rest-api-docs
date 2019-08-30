@@ -2,6 +2,7 @@
 All notable changes to this API will be documented in this file.
 
 ##  August, 2019
+- released elixir librarie [released](https://github.com/ipfinder-io/ip-finder-rlang)
 - released R librarie [released](https://github.com/ipfinder-io/ip-finder-rlang)
 - released Lua librarie [released](https://github.com/ipfinder-io/ip-finder-lua)
 - released Java librarie [released](https://github.com/ipfinder-io/ip-finder-java)
