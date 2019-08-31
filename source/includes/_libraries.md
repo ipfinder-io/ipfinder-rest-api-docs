@@ -20,6 +20,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | C#         | In progress  | ||
 | Rust       | In progress  | ||
 | Haskell    | In progress  | ||
+| Erlang     | In progress  | ||
 
 
 ## Framework Libraries
