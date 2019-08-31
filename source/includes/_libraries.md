@@ -18,6 +18,7 @@ Official libraries for common programming languages, like PHP, Python etc.
 | elixir     | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-elixir) |[ipfinder](https://hex.pm/packages/ipfinder)|
 | Go         | In progress  | ||
 | C#         | In progress  | ||
+| Rust       | In progress  | ||
 
 ## Framework Libraries
 
