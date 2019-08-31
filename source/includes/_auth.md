@@ -12,17 +12,15 @@ $ curl -X GET /
 
 # With POST application/json
 
-$ curl -d '{"token":"$TOKEN"}' /
-       -H "Content-Type: application/json" /
-       -X POST /
-       https://api.ipfinder.io/v1/
+$ curl -d '{"token":"$TOKEN"}' \
+       -H "Content-Type: application/json" \
+       -X POST https://api.ipfinder.io/v1/
 
 # With POST application/x-www-form-urlencoded
 
-$ curl -d "token=$TOKEN" /
-       -H "Content-Type: application/x-www-form-urlencoded" /
-       -X POST /
-       https://api.ipfinder.io/v1/
+$ curl -d "token=$TOKEN" \
+       -H "Content-Type: application/x-www-form-urlencoded" \
+       -X POST https://api.ipfinder.io/v1/
 
 # With Basic Auth
 $ curl -u $TOKEN: https://api.ipfinder.io/v1/

@@ -8,29 +8,26 @@ Here are sample command lines for fetching API service information :
 curl -X GET https://api.ipfinder.io/v1/(asNumber)?token=$TOKEN
 
 # With POST Get details for 1.0.0.0
-curl -d '{"token":"$TOKEN"}' /
-     -H "Content-Type: application/json" /
-      -X POST /
-       https://api.ipfinder.io/v1/(asNumber)
+curl -d '{"token":"$TOKEN"}' \
+     -H "Content-Type: application/json" \
+      -X POST  https://api.ipfinder.io/v1/(asNumber)
 
 # parameters Examples
 # jsonp
-curl -d '{"token":"$TOKEN", "format":"jsonp", "callback": "test"}' /
-     -H "Content-Type: application/json" /
-      -X POST /
-       https://api.ipfinder.io/v1/(asNumber)
+curl -d '{"token":"$TOKEN", "format":"jsonp", "callback": "test"}' \
+     -H "Content-Type: application/json" \
+      -X POST https://api.ipfinder.io/v1/(asNumber)
 
 
 # xml 
-curl -d '{"token":"$TOKEN", "format" : "xml"}' /
-     -H "Content-Type: application/json" /
-     -X POST /
-      https://api.ipfinder.io/v1/(asNumber)
+curl -d '{"token":"$TOKEN", "format" : "xml"}' \
+     -H "Content-Type: application/json" \
+     -X POST https://api.ipfinder.io/v1/(asNumber)
 
 
 # php
-curl -d '{"token":"$TOKEN", "format" : "php"}' /
-     -H "Content-Type: application/json" /
+curl -d '{"token":"$TOKEN", "format" : "php"}' \
+     -H "Content-Type: application/json" \
      -X POST https://api.ipfinder.io/v1/(asNumber)
 ```
 

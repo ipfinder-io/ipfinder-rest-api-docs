@@ -12,35 +12,30 @@ In order to fetch information about an IP address, you need to build a request U
 curl -X GET https://api.ipfinder.io/v1/1.0.0.0?token=$TOKEN
 
 # With POST Get details for 1.0.0.0
-curl -d '{"token":"$TOKEN"}' /
-     -X POST /
-      https://api.ipfinder.io/v1/1.0.0.0
+curl -d '{"token":"$TOKEN"}' \
+     -X POST https://api.ipfinder.io/v1/1.0.0.0
 
 # With X-Authorization token details for 1.0.0.0
-curl  -H 'X-Authorization:$TOKEN' /
-      -X GET /
-       https://api.ipfinder.io/v1/1.0.0.0
+curl  -H 'X-Authorization:$TOKEN' \
+      -X GET https://api.ipfinder.io/v1/1.0.0.0
 
 # parameters Examples
 # jsonp
-curl -d '{"token":"$TOKEN", "format":"jsonp", "callback": "test"}' /
-     -H "Content-Type: application/json" /
-     -X POST  /
-     https://api.ipfinder.io/v1/1.0.0.0
+curl -d '{"token":"$TOKEN", "format":"jsonp", "callback": "test"}' \
+     -H "Content-Type: application/json" \
+     -X POST https://api.ipfinder.io/v1/1.0.0.0
 
 
 # xml 
-curl -d '{"token":"$TOKEN", "format" : "xml"}' /
-     -H "Content-Type: application/json" /
-     -X POST /
-      https://api.ipfinder.io/v1/169.57.0.140
+curl -d '{"token":"$TOKEN", "format" : "xml"}' \
+     -H "Content-Type: application/json" \
+     -X POST https://api.ipfinder.io/v1/169.57.0.140
 
 
 # php
-curl -d '{"token":"$TOKEN", "format" : "php"}' /
-     -H "Content-Type: application/json" /
-     -X POST /
-      https://api.ipfinder.io/v1/169.57.0.140
+curl -d '{"token":"$TOKEN", "format" : "php"}' \
+     -H "Content-Type: application/json" \
+     -X POST https://api.ipfinder.io/v1/169.57.0.140
 
 ```
 
