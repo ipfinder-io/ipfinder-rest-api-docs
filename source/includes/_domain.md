@@ -128,6 +128,15 @@ iex> {:ok, domain} = getDomain(conf,"google.fr")
 iex> domain
 ```
 
+```swift
+import ipfinder
+let ipfinder = Ipfinder("YOUR_TOKEN_GOES_HERE")
+// domain name
+let domain = ipfinder.getDomain("google.ma")
+
+print(domain)
+```
+
 
 ```powershell
 
