@@ -12,6 +12,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - d: dlang
   - r: Rlang
   - elixir: elixir
+  - swift: Swift
   - powershell: CLI
 
 toc_footers:
