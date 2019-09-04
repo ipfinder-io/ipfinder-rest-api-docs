@@ -146,6 +146,16 @@ iex> {:ok, range} = getRanges(conf,"Telecom Algeria")
 iex> range
 ```
 
+```swift
+import ipfinder
+let ipfinder = Ipfinder("YOUR_TOKEN_GOES_HERE")
+
+// lookup Organization information
+let range = ipfinder.getRanges("Telecom Algeria")
+
+print(range)
+```
+
 ```powershell
 
   # shortopt
