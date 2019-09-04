@@ -151,6 +151,16 @@ iex> {:ok, asn} = getAsn(conf,"AS1")
 iex> asn
 ```
 
+```swift
+import ipfinder
+let ipfinder = Ipfinder("YOUR_TOKEN_GOES_HERE")
+
+// lookup Asn information
+let asn = ipfinder.getAddressInfo("as1")
+
+print(asn)
+```
+
 
 ```powershell
 
