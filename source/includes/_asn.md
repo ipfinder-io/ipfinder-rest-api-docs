@@ -161,6 +161,20 @@ let asn = ipfinder.getAddressInfo("as1")
 print(asn)
 ```
 
+```go 
+// lookup Asn information
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "") 
+  asn, err := conf.GetAsn("as1")
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(asn)
+  }
+}
+```
+
 
 ```powershell
 
