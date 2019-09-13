@@ -11,13 +11,13 @@ Official libraries for common programming languages, like PHP, Python etc.
 | Python     | Released |[ipfinder-io/ip-finder-python](https://github.com/ipfinder-io/ip-finder-python)|[ipfinder-io](https://pypi.org/project/ipfinder-io/)|                 
 | PHP        | Released |[ipfinder-io/ip-finder-php](https://github.com/ipfinder-io/ip-finder-php)|[ipfinder/ipfinder](https://packagist.org/packages/ipfinder/ipfinder)|                            
 | Ruby       | Released |[ipfinder-io/ip-finder-ruby](https://github.com/ipfinder-io/ip-finder-ruby)|[Ipfinder](https://rubygems.org/gems/Ipfinder)|  
-| R          | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-rlang) ||
-| Swift      | Released  |[ipfinder-io/ip-finder-swift](https://github.com/ipfinder-io/ip-finder-swift) ||
 | Perl       | Released  |[ipfinder-io/ip-finder-perl](https://github.com/ipfinder-io/ip-finder-perl) |[IO-IPFinder](https://metacpan.org/release/IPFINDER/IO-IPFinder-1.0)|  
 | D          | Released  |[ipfinder-io/ip-finder-dlag](https://github.com/ipfinder-io/ip-finder-dlang) |[ipfinder](https://code.dlang.org/packages/ipfinder)|  
 | Lua        | Released  |[ipfinder-io/ip-finder-lua](https://github.com/ipfinder-io/ip-finder-lua) |[ipfinder](https://luarocks.org/modules/benemohamed/ipfinder)|  
-| elixir     | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-elixir) |[ipfinder](https://hex.pm/packages/ipfinder)|
-| Go         | In progress  | ||
+| elixir     | Released  |[ipfinder-io/ip-finder-elixir](https://github.com/ipfinder-io/ip-finder-elixir) |[ipfinder](https://hex.pm/packages/ipfinder)|
+| R          | Released  |[ipfinder-io/ip-finder-rlang](https://github.com/ipfinder-io/ip-finder-rlang) ||
+| Swift      | Released  |[ipfinder-io/ip-finder-swift](https://github.com/ipfinder-io/ip-finder-swift) ||
+| Go         | Released  |[ipfinder-io/ip-finder-go](https://github.com/ipfinder-io/ip-finder-go) ||
 | C#         | In progress  | ||
 | Rust       | In progress  | ||
 | Haskell    | In progress  | ||
