@@ -141,6 +141,20 @@ let by = ipfinder.getDomainBy("DZ")
 print(by)
 ```
 
+```go 
+// list live domain by country DZ,US,TN,FR,MA
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "") 
+  domain, err := conf.GetDomainBy("DZ")
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(domain)
+  }
+}
+```
+
 ```powershell
 
   # shortopt
