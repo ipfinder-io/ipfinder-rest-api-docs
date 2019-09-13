@@ -158,6 +158,20 @@ let fire = ipfinder.getFirewall("AS1", format:"nginx_deny")
 print(fire)
 ```
 
+```go 
+// lookup Asn Firewall information
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "") 
+  fire, err := conf.GetFirewall("as1", "nginx_deny")
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(fire)
+  }
+}
+```
+
 
 ```powershell
 
