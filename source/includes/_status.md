@@ -142,6 +142,20 @@ let status = ipfinder.getStatus()
 print(status)
 ```
 
+```go 
+// lookup IP TOKEN information
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "")
+  stats, err := conf.GetStatus()
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(stats)
+  }
+}
+```
+
 
 ```powershell
 
