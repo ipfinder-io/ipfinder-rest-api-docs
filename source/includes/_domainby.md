@@ -134,6 +134,20 @@ let domain = ipfinder.getDomainHistory("google.in")
 print(domain)
 ```
 
+```go 
+// Get domain name IP list history
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "") 
+  domain, err := conf.GetDomainHistory("google.dz")
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(domain)
+  }
+}
+```
+
 
 ```powershell
 
