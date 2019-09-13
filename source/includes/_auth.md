@@ -155,6 +155,19 @@ let auth = ipfinder.Authentication()
 print(auth)
 ```
 
+```go 
+// lookup your IP address information
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "")
+  auth, err := conf.Authentication()
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(auth)
+  }
+}
+```
 
 ```powershell
 
