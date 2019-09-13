@@ -175,6 +175,20 @@ let ip = ipfinder.getAddressInfo("1.0.0.0")
 print(ip)
 ```
 
+```go 
+// lookup IP address information
+func main() {
+  conf := ipfinder.New("YOUR_TOKEN_GOES_HERE", "")
+  ip, err := conf.GetAddressInfo("1.0.0.0")
+
+  if err != nil {
+    fmt.Println("Error : ", err)
+  } else {
+    fmt.Println(ip)
+  }
+}
+
+
 
 ```powershell
 
