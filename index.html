@@ -256,7 +256,7 @@
             <a href="#get-ip-address-details" class="toc-h1 toc-link" data-title="Get IP address details">Get IP address details</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples">Examples</a>
+                    <a href="#examples-ip" class="toc-h2 toc-link" data-title="Examples IP">Examples IP</a>
                   </li>
                   <li>
                     <a href="#response-objects-details" class="toc-h2 toc-link" data-title="Response  Objects details">Response  Objects details</a>
@@ -267,7 +267,7 @@
             <a href="#get-as-details" class="toc-h1 toc-link" data-title="Get AS details">Get AS details</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples">Examples</a>
+                    <a href="#examples-as" class="toc-h2 toc-link" data-title="Examples AS">Examples AS</a>
                   </li>
                   <li>
                     <a href="#response-object" class="toc-h2 toc-link" data-title="Response object">Response object</a>
@@ -278,7 +278,7 @@
             <a href="#firewall" class="toc-h1 toc-link" data-title="Firewall">Firewall</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples">Examples</a>
+                    <a href="#examples-firewall" class="toc-h2 toc-link" data-title="Examples Firewall">Examples Firewall</a>
                   </li>
                   <li>
                     <a href="#response-details" class="toc-h2 toc-link" data-title="Response  details">Response  details</a>
@@ -289,7 +289,7 @@
             <a href="#get-service-status" class="toc-h1 toc-link" data-title="Get service status">Get service status</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples">Examples</a>
+                    <a href="#examples-status" class="toc-h2 toc-link" data-title="Examples status">Examples status</a>
                   </li>
                   <li>
                     <a href="#response-objects-details" class="toc-h2 toc-link" data-title="Response Objects details">Response Objects details</a>
@@ -300,7 +300,7 @@
             <a href="#ip-address-ranges" class="toc-h1 toc-link" data-title="IP Address Ranges">IP Address Ranges</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#examples" class="toc-h2 toc-link" data-title="Examples">Examples</a>
+                    <a href="#examples-ranges" class="toc-h2 toc-link" data-title="Examples Ranges">Examples Ranges</a>
                   </li>
                   <li>
                     <a href="#response-objects-details" class="toc-h2 toc-link" data-title="Response Objects details">Response Objects details</a>
@@ -594,7 +594,7 @@ Note Api key <code>$TOKEN</code> Work in all project
 <span class="p">},</span> <span class="s2">"jsonp"</span><span class="p">)</span>
 </code></pre><h1 id='get-ip-address-details'>Get IP address details</h1>
 <p>In order to fetch information about an IP address, you need to build a request URL of the following form :</p>
-<h2 id='examples'>Examples</h2><pre class="highlight shell tab-shell"><code><span class="c"># With GET Get details for 1.0.0.0</span>
+<h2 id='examples-ip'>Examples IP</h2><pre class="highlight shell tab-shell"><code><span class="c"># With GET Get details for 1.0.0.0</span>
 curl -X GET https://api.ipfinder.io/v1/1.0.0.0?token<span class="o">=</span><span class="nv">$TOKEN</span>
 
 <span class="c"># With POST Get details for 1.0.0.0</span>
@@ -1117,7 +1117,7 @@ $ ipfinder --ip 2.2.2.2
 </tbody></table>
 <h1 id='get-as-details'>Get AS details</h1>
 <p>The AS API lets you request details about an AS number, it is included with PROFESSIONAL and Enterprise API plans.</p>
-<h2 id='examples'>Examples</h2>
+<h2 id='examples-as'>Examples AS</h2>
 <p>Here are sample command lines for fetching API service information :</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># With GET Get details for 1.0.0.0</span>
 curl -X GET https://api.ipfinder.io/v1/<span class="o">(</span>asNumber<span class="o">)</span>?token<span class="o">=</span><span class="nv">$TOKEN</span>
@@ -1497,7 +1497,7 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
 <aside class="notice">
 <code>Important</code>  Please update this list every month
 </aside>
-<h2 id='examples'>Examples</h2>
+<h2 id='examples-firewall'>Examples Firewall</h2>
 <p>Here are sample command lines for fetching API service information :</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://api.ipfinder.io/v1/firewall/{by}?token=$TOKEN&amp;format=$Format</code></p>
@@ -1777,7 +1777,7 @@ add address=45.6.182.0/24 comment="AS2" list=IPfinder
 <td>add address=8.8.8.0/24 comment=&quot;Danger&quot; list=MyList</td>
 </tr>
 </tbody></table>
-<h1 id='get-service-status'>Get service status</h1><h2 id='examples'>Examples</h2>
+<h1 id='get-service-status'>Get service status</h1><h2 id='examples-status'>Examples status</h2>
 <p>Here are sample command lines for fetching API service information :</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://api.ipfinder.io/v1/info</code></p>
@@ -1974,7 +1974,7 @@ add address=45.6.182.0/24 comment="AS2" list=IPfinder
 <p>Our IP address ranges API will return a list of all of the IP addresses ranges assigned to or operated by a company, identified by the Organization name. So, you provide a Organization name, and we return all of the IP address ranges in CIDR format that belong to that company.</p>
 
 <p>This API is currently only available as part of our enterprise </p>
-<h2 id='examples'>Examples</h2>
+<h2 id='examples-ranges'>Examples Ranges</h2>
 <p>Here are sample command lines for fetching API service information :</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://api.ipfinder.io/v1/ranges/$ORGNAME?token=$token</code></p>
