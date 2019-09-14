@@ -8,7 +8,7 @@ This API is currently only available as part of our enterprise
 <code>Important</code>  Please update this list every month
 </aside>
 
-## Examples
+## Examples Firewall
 
 Here are sample command lines for fetching API service information :
 

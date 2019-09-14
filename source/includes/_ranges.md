@@ -3,7 +3,7 @@ Our IP address ranges API will return a list of all of the IP addresses ranges a
 
 This API is currently only available as part of our enterprise 
 
-## Examples
+## Examples Ranges
 
 Here are sample command lines for fetching API service information :
 

@@ -3,7 +3,7 @@
 The AS API lets you request details about an AS number, it is included with PROFESSIONAL and Enterprise API plans.
 
 
-## Examples
+## Examples AS
 Here are sample command lines for fetching API service information :
 
 ```shell

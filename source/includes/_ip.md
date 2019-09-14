@@ -3,7 +3,7 @@
 In order to fetch information about an IP address, you need to build a request URL of the following form :
 
 
-## Examples
+## Examples IP
 
 
 

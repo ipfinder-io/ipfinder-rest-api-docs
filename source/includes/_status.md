@@ -1,6 +1,6 @@
 # Get service status
 
-## Examples
+## Examples status
 
 Here are sample command lines for fetching API service information :
 
