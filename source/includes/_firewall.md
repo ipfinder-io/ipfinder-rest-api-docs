@@ -7,7 +7,9 @@ This API is currently only available as part of our enterprise
 <aside class="notice">
 <code>Important</code>  Please update this list every month
 </aside>
+
 ## Examples
+
 Here are sample command lines for fetching API service information :
 
 ### HTTP Request
@@ -143,7 +145,7 @@ fire
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # lookup Asn Firewall information
-iex> {:ok, fire} = getFirewall(conf,"AS1", 'nginx_deny')
+iex> {:ok, fire} = Ipfinder.getFirewall(conf,"AS1", 'nginx_deny')
 
 iex>fire
 ```

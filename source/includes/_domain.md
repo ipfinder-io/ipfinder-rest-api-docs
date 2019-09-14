@@ -123,7 +123,7 @@ domain
 ```elixir
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
-iex> {:ok, domain} = getDomain(conf,"google.fr")
+iex> {:ok, domain} = Ipfinder.getDomain(conf,"google.fr")
 
 iex> domain
 ```

@@ -160,7 +160,7 @@ ip
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # GET Get details for 1.0.0.0
-iex> {:ok, ip} = getAddressInfo(conf,"1.0.0.0")
+iex> {:ok, ip} = Ipfinder.getAddressInfo(conf,"1.0.0.0")
 # print data
 ip
 ```
@@ -224,6 +224,7 @@ propertyName  | optional |  specify a single field name to request instead of th
 
 
 ## Response  Objects details
+
 Depending on your subscription plan and the options you choose for your API request, the ipstack API will respond using a series of different modules and objects. Find below a list of all available API response objects explained.
 > Full Response
 

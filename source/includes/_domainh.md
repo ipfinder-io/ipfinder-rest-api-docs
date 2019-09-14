@@ -127,7 +127,7 @@ iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # list live domain by country DZ,US,TN,FR,MA
 
-iex> {:ok, by} = getDomainBy(conf,"FR")
+iex> {:ok, by} = Ipfinder.getDomainBy(conf,"FR")
 
 iex> by
 ```

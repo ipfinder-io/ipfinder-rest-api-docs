@@ -137,7 +137,7 @@ auth$ip
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # lookup your IP address information
-iex> {:ok, auth} = Authentication(conf)
+iex> {:ok, auth} = Ipfinder.Authentication(conf)
 
 iex> auth
 # print your ip

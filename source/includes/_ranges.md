@@ -4,6 +4,7 @@ Our IP address ranges API will return a list of all of the IP addresses ranges a
 This API is currently only available as part of our enterprise 
 
 ## Examples
+
 Here are sample command lines for fetching API service information :
 
 ### HTTP Request
@@ -141,7 +142,7 @@ range
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # lookup Organization information
-iex> {:ok, range} = getRanges(conf,"Telecom Algeria")
+iex> {:ok, range} = Ipfinder.getRanges(conf,"Telecom Algeria")
 
 iex> range
 ```
@@ -190,6 +191,7 @@ Parameter | Default  | Description
 
 
 ## Response Objects details
+
 ```json
 {
     "status": "ok",

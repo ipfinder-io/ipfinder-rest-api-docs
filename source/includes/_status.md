@@ -1,6 +1,7 @@
 # Get service status
 
 ## Examples
+
 Here are sample command lines for fetching API service information :
 
 ### HTTP Request
@@ -127,7 +128,7 @@ status
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # lookup IP TOKEN information
-iex> {:ok, status} = getStatus(conf)
+iex> {:ok, status} = Ipfinder.getStatus(conf)
 
 iex> status
 ```

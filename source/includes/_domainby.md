@@ -120,7 +120,7 @@ domain
 iex> conf = Ipfinder.new("YOUR_TOKEN_GOES_HERE")
 
 # domain name IP history
-iex> {:ok, domain} = getDomainHistory(conf,"google.fr")
+iex> {:ok, domain} = Ipfinder.getDomainHistory(conf,"google.fr")
 
 iex> domain
 ```
