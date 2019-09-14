@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="https://ipfinder.io/favicon.ico">
     <title>Geolocation API developer Documentation v1 - IPFINDER</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135747704-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-135747704-1');</script><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MCK3JT7');</script>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -508,7 +510,7 @@
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># lookup your IP address information</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">auth</span><span class="p">}</span> <span class="o">=</span> <span class="no">Authentication</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">auth</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="no">Authentication</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">auth</span>
 <span class="c1"># print your ip</span>
@@ -718,7 +720,7 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># GET Get details for 1.0.0.0</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">ip</span><span class="p">}</span> <span class="o">=</span> <span class="n">getAddressInfo</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">1.0.0.0"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">ip</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getAddressInfo</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">1.0.0.0"</span><span class="p">)</span>
 <span class="c1"># print data</span>
 <span class="n">ip</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -1113,7 +1115,9 @@ $ ipfinder --ip 2.2.2.2
 <td>[Object] Returns an object containing  User Agent-related data(<code>user_agent</code>,<code>browser_name</code>,<code>os_name</code>,<code>device_type</code>).</td>
 </tr>
 </tbody></table>
-<h1 id='get-as-details'>Get AS details</h1><h2 id='examples'>Examples</h2>
+<h1 id='get-as-details'>Get AS details</h1>
+<p>The AS API lets you request details about an AS number, it is included with PROFESSIONAL and Enterprise API plans.</p>
+<h2 id='examples'>Examples</h2>
 <p>Here are sample command lines for fetching API service information :</p>
 <pre class="highlight shell tab-shell"><code><span class="c"># With GET Get details for 1.0.0.0</span>
 curl -X GET https://api.ipfinder.io/v1/<span class="o">(</span>asNumber<span class="o">)</span>?token<span class="o">=</span><span class="nv">$TOKEN</span>
@@ -1231,7 +1235,7 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
 </span><span class="n">asn</span><span class="w">
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">asn</span><span class="p">}</span> <span class="o">=</span> <span class="n">getAsn</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">AS1"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">asn</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getAsn</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">AS1"</span><span class="p">)</span>
 <span class="c1"># print data</span>
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">asn</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -1598,7 +1602,7 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># lookup Asn Firewall information</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">fire</span><span class="p">}</span> <span class="o">=</span> <span class="n">getFirewall</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">AS1"</span><span class="p">,</span> <span class="s1">'nginx_deny'</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">fire</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getFirewall</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">AS1"</span><span class="p">,</span> <span class="s1">'nginx_deny'</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span><span class="n">fire</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -1870,7 +1874,7 @@ add address=45.6.182.0/24 comment="AS2" list=IPfinder
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># lookup IP TOKEN information</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">status</span><span class="p">}</span> <span class="o">=</span> <span class="n">getStatus</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">status</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getStatus</span><span class="p">(</span><span class="n">conf</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">status</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -2077,7 +2081,7 @@ CURL -X GET <span class="s1">'http://api.ipfinder.io/v1/ranges/Telecom%20Algeria
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># lookup Organization information</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">range</span><span class="p">}</span> <span class="o">=</span> <span class="n">getRanges</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">Telecom Algeria"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">range</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getRanges</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">Telecom Algeria"</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">range</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -2325,7 +2329,7 @@ curl -XGET https://api.ipfinder.io/v1/domain/google.com?token<span class="o">=</
 </span><span class="n">domain</span><span class="w">
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">domain</span><span class="p">}</span> <span class="o">=</span> <span class="n">getDomain</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">google.fr"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">domain</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getDomain</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">google.fr"</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">domain</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -2550,7 +2554,7 @@ curl -XGET https://api.ipfinder.io/v1/domainhistory/google.com?token<span class=
 </span></code></pre><pre class="highlight elixir tab-elixir"><code><span class="n">iex</span><span class="o">&gt;</span> <span class="n">conf</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="sd">"</span><span class="s2">YOUR_TOKEN_GOES_HERE"</span><span class="p">)</span>
 
 <span class="c1"># domain name IP history</span>
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">domain</span><span class="p">}</span> <span class="o">=</span> <span class="n">getDomainHistory</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">google.fr"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">domain</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getDomainHistory</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">google.fr"</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">domain</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
@@ -2790,7 +2794,7 @@ curl -XGET https://api.ipfinder.io/v1/domainby/Google%20LLC?token<span class="o"
 
 <span class="c1"># list live domain by country DZ,US,TN,FR,MA</span>
 
-<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">by</span><span class="p">}</span> <span class="o">=</span> <span class="n">getDomainBy</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">FR"</span><span class="p">)</span>
+<span class="n">iex</span><span class="o">&gt;</span> <span class="p">{</span><span class="ss">:ok</span><span class="p">,</span> <span class="n">by</span><span class="p">}</span> <span class="o">=</span> <span class="no">Ipfinder</span><span class="o">.</span><span class="n">getDomainBy</span><span class="p">(</span><span class="n">conf</span><span class="p">,</span><span class="sd">"</span><span class="s2">FR"</span><span class="p">)</span>
 
 <span class="n">iex</span><span class="o">&gt;</span> <span class="n">by</span>
 </code></pre><pre class="highlight swift tab-swift"><code><span class="kd">import</span> <span class="n">ipfinder</span>
