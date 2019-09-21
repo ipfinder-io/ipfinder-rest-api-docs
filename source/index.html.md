@@ -14,6 +14,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - elixir: elixir
   - swift: Swift
   - go: Go
+  - dart: Dart
   - powershell: CLI
 
 toc_footers:
