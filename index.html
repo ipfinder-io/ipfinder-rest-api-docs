@@ -203,7 +203,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;php&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;ruby&quot;,&quot;java&quot;,&quot;lua&quot;,&quot;d&quot;,&quot;r&quot;,&quot;elixir&quot;,&quot;swift&quot;,&quot;go&quot;,&quot;powershell&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;php&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;ruby&quot;,&quot;java&quot;,&quot;lua&quot;,&quot;d&quot;,&quot;r&quot;,&quot;elixir&quot;,&quot;swift&quot;,&quot;go&quot;,&quot;dart&quot;,&quot;powershell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -225,6 +225,7 @@
               <a href="#" data-language-name="elixir">elixir</a>
               <a href="#" data-language-name="swift">Swift</a>
               <a href="#" data-language-name="go">Go</a>
+              <a href="#" data-language-name="dart">Dart</a>
               <a href="#" data-language-name="powershell">CLI</a>
         </div>
         <div class="search">
@@ -358,6 +359,9 @@
           <li>
             <a href="#changelog" class="toc-h1 toc-link" data-title="Changelog">Changelog</a>
               <ul class="toc-list-h2">
+                  <li>
+                    <a href="#september-2019" class="toc-h2 toc-link" data-title="September, 2019">September, 2019</a>
+                  </li>
                   <li>
                     <a href="#august-2019" class="toc-h2 toc-link" data-title="August, 2019">August, 2019</a>
                   </li>
@@ -534,7 +538,15 @@
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">auth</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">IpResponse</span> <span class="n">auth</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">authentication</span><span class="o">();</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">auth</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">auth</span><span class="o">.</span><span class="na">location</span><span class="o">);</span> <span class="c1">// print location</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -a 
   <span class="c1"># longopt</span>
@@ -741,17 +753,20 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">ip</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
 
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">IpResponse</span> <span class="n">ip</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getAddressInfo</span><span class="o">(</span><span class="s">"1.0.0.0"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">ip</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
+  <span class="c1"># shortopt</span>
+<span class="gp">$ </span>ipfinder -i 5.5.5.5
+  <span class="c1"># longopt</span>
+<span class="gp">$ </span>ipfinder --ip 2.2.2.2
 
-
-</span><span class="s">```powershell
-
-  # shortopt
-$ ipfinder -i 5.5.5.5
-  # longopt
-$ ipfinder --ip 2.2.2.2
-
-</span></code></pre>
+</code></pre>
 <p>Here are a few examples for fetching IP address information from the command line :</p>
 <h3 id='http-request'>HTTP Request</h3>
 <p><code>GET https://api.ipfinder.io/v1/{ipAddress}?token=$TOKEN</code></p>
@@ -1256,7 +1271,14 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">asn</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">AsnResponse</span> <span class="n">asn</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getAsn</span><span class="o">(</span><span class="s">"as1"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">asn</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -n as1
   <span class="c1"># longopt</span>
@@ -1623,7 +1645,14 @@ curl -d <span class="s1">'{"token":"$TOKEN", "format" : "php"}'</span> <span cla
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">fire</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">Response</span> <span class="n">fire</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getFirewall</span><span class="o">(</span><span class="s">"AS1"</span><span class="o">,</span> <span class="s">"nginx_deny"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">fire</span><span class="o">);</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -f AS1 --m juniper_junos
   <span class="c1"># longopt</span>
@@ -1895,7 +1924,14 @@ add address=45.6.182.0/24 comment="AS2" list=IPfinder
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">stats</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">StatusResponse</span> <span class="n">status</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getStatus</span><span class="o">();</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">status</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -s 
   <span class="c1"># longopt</span>
@@ -2102,7 +2138,14 @@ CURL -X GET <span class="s1">'http://api.ipfinder.io/v1/ranges/Telecom%20Algeria
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">ranges</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">RangeResponse</span> <span class="n">range</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getRanges</span><span class="o">(</span><span class="s">"Telecom Algeria"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">range</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -r  <span class="s1">'Telecom Algeria'</span>
   <span class="c1"># longopt</span>
@@ -2349,7 +2392,14 @@ curl -XGET https://api.ipfinder.io/v1/domain/google.com?token<span class="o">=</
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">DomainResponse</span> <span class="n">domain</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getDomain</span><span class="o">(</span><span class="s">"google.com"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">domain</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -d google.dz
   <span class="c1"># longopt</span>
@@ -2574,7 +2624,14 @@ curl -XGET https://api.ipfinder.io/v1/domainhistory/google.com?token<span class=
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">DomainHtResponse</span> <span class="n">domain</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getDomainHistory</span><span class="o">(</span><span class="s">"google.com"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">domain</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -dh google.com
   <span class="c1"># longopt</span>
@@ -2814,7 +2871,14 @@ curl -XGET https://api.ipfinder.io/v1/domainby/Google%20LLC?token<span class="o"
     </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">domain</span><span class="p">)</span><span class="x">
   </span><span class="p">}</span><span class="x">
 </span><span class="p">}</span><span class="x">
-</span></code></pre><pre class="highlight powershell tab-powershell"><code>
+</span></code></pre><pre class="highlight dart tab-dart"><code><span class="kn">import</span> <span class="s">'package:ipfinder/ipfinder.dart'</span><span class="o">;</span>
+
+<span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="o">)</span> <span class="n">async</span> <span class="o">{</span>
+  <span class="n">Ipfinder</span> <span class="n">ipfinder</span> <span class="o">=</span> <span class="n">Ipfinder</span><span class="o">(</span><span class="s">"YOUR_TOKEN_GOES_HERE"</span><span class="o">);</span>
+  <span class="n">DomainByResponse</span> <span class="n">by</span> <span class="o">=</span> <span class="n">await</span> <span class="n">ipfinder</span><span class="o">.</span><span class="na">getDomainBy</span><span class="o">(</span><span class="s">"DZ"</span><span class="o">);</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">by</span><span class="o">.</span><span class="na">toJson</span><span class="o">());</span> <span class="c1">// print json data</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight powershell tab-powershell"><code>
   <span class="c1"># shortopt</span>
 <span class="gp">$ </span>ipfinder -dl DZ
   <span class="c1"># longopt</span>
@@ -3127,6 +3191,12 @@ C:\Users\username&gt; ipfinder --help
 <td><a href="https://hex.pm/packages/ipfinder">ipfinder</a></td>
 </tr>
 <tr>
+<td>Dart</td>
+<td>Released</td>
+<td><a href="https://github.com/ipfinder-io/ip-finder-dart">ipfinder-io/ip-finder-dart</a></td>
+<td><a href="https://pub.dev/packages/ipfinder">ipfinder</a></td>
+</tr>
+<tr>
 <td>R</td>
 <td>Released</td>
 <td><a href="https://github.com/ipfinder-io/ip-finder-rlang">ipfinder-io/ip-finder-rlang</a></td>
@@ -3237,6 +3307,11 @@ doesn&#39;t make sense in the core language library. This includes bot filtering
 <p>If you’ve written a ipfinder library and would like to add it to this page, send an email to info@ipfinder.io.</p>
 <h1 id='changelog'>Changelog</h1>
 <p>All notable changes to this API will be documented in this file.</p>
+<h2 id='september-2019'>September, 2019</h2>
+<ul>
+<li>released dart librarie <a href="https://github.com/ipfinder-io/ip-finder-dart">released</a></li>
+<li>released go librarie <a href="https://github.com/ipfinder-io/ip-finder-go">released</a></li>
+</ul>
 <h2 id='august-2019'>August, 2019</h2>
 <ul>
 <li>released elixir librarie <a href="https://github.com/ipfinder-io/ip-finder-rlang">released</a></li>
@@ -3388,6 +3463,7 @@ doesn&#39;t make sense in the core language library. This includes bot filtering
                 <a href="#" data-language-name="elixir">elixir</a>
                 <a href="#" data-language-name="swift">Swift</a>
                 <a href="#" data-language-name="go">Go</a>
+                <a href="#" data-language-name="dart">Dart</a>
                 <a href="#" data-language-name="powershell">CLI</a>
           </div>
       </div>
