@@ -3,6 +3,7 @@ All notable changes to this API will be documented in this file.
 
 ##  September, 2019
 - released dart librarie [released](https://github.com/ipfinder-io/ip-finder-dart)
+- released go librarie [released](https://github.com/ipfinder-io/ip-finder-go)
 
 ##  August, 2019
 - released elixir librarie [released](https://github.com/ipfinder-io/ip-finder-rlang)
